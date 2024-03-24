@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Write a function to return the number of digits in the given number
+
+        function digits(a){
+            while(a){
+                var rem=a%10;
+                console.log(rem);
+                a=parseInt(a/10)
+            }
+        }
+        digits(+prompt("Enter a number"))
+    </script>
+</body>
+</html>

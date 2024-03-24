@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Write a function which can check a given number is armstrong number or not.
+
+        function armstrong(a){
+            var sum=0;
+            var count=0;
+            var temp=a;
+            var arm=a;
+            for(var i=a;i!=0;i=parseInt(i/10)){
+                var rem=i%10;
+                count++
+            }
+            for(var j=temp;j!=0;j=parseInt(j/10)){
+                var rem=j%10;
+                sum=sum+rem**count;                
+            }
+            if(sum===arm){
+                console.log("Given number is armstrong number")
+            }
+            else{
+                console.log("Given number is not armstrong number")
+            }
+
+        }
+        armstrong(+prompt("Enter a number"))
+
+    </script>
+</body>
+</html>
